@@ -1,1 +1,28 @@
+ #body {
+    background-image: url("./the1975.jpg");
+    text-align: center;
+ }
  
+ #header {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #eb34a4;
+    font-size: 80px;
+    font-weight: bolder;
+    text-align: center;
+ }
+
+ #query {
+    width: 500px;
+    height: 60px;
+    text-align: center;
+ }
+
+ .time {
+    text-align: center;
+ }
+
+ #searchResults {
+    /* visibility: hidden; */
+    display: none;
+    text-align: center;
+ }

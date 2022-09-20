@@ -3,14 +3,40 @@
 <html lang="en">
 
 <head>
-  <title>Hello, World!</title>
+  <title>etc.</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha384-i61gTtaoovXtAbKjo903+O55Jkn2+RtzHtvNez+yI49HAASvznhe9sZyjaSHTau9" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/dark-hive/jquery-ui.css" integrity="sha384-wdExkHqF9qGM6o0Aq+Ush/gTqKBRHROAbS5lX+8M402GBSuBymWRVDWNpOif/Xuw" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha384-4D3G3GikQs6hLlLZGdz5wLFzuqE9v4yVGAcOH86y23JqBDPzj9viv0EqyfIa6YUL" crossorigin="anonymous"></script>
 
 </head>
 
-<body>
-  <h1>What's Up</h1>
+<body id="body" onload="startTime()">
+  <h1 id="header" onclick="changeBackground()">et cetera</h1>
+  
+  <input id="query" type="text">
+  <button type="button" onclick="apiSearch()" class="btn btn-success" value="search">Search</button>
+
+  <div id="time" class="row">
+    <div class="col-md-12">
+      <p></p>
+      <button type="button" id="timeBtn" onclick="getTimeDisplay()" class="btn btn-info">What's the Time?</button>
+      <div id="timeDisplay">
+
+      </div>
+    </div>
+  </div>  
+
+  <div id="searchResults">
+
+  </div>
+
   <script type="text/javascript" src="./script.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 
 </body>
 
